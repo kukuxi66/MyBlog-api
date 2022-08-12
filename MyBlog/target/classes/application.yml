@@ -1,0 +1,27 @@
+
+spring:
+  main:
+    allow-circular-references: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog
+    username: root
+    password: admin
+  redis:
+    port: 6379
+    host: localhost
+  servlet:
+    multipart:
+      max-request-size: 20MB
+      max-file-size: 2MB
+
+server:
+  port: 8888
+
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: ms_
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+

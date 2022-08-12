@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "qiniu",
+      "type": "java.lang.String",
+      "description": "Description for qiniu."
+  }
+] }
